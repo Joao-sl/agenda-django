@@ -1,15 +1,20 @@
 {
+    // Configurações do editor
     "editor.fontSize": 20,
+    
+    // Configurações do explorador
     "explorer.compactFolders": false,
+
+    // Configurações do Code Runner
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
-        "python": "cls ; python -u",
+        "python": "cls ; python -u"
     },
     "code-runner.ignoreSelection": true,
+
+    // Configurações do Python
     "python.defaultInterpreterPath": "python",
-    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
-    "workbench.iconTheme": "material-icon-theme",
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.analysis.diagnosticSeverityOverrides": {
@@ -20,4 +25,14 @@
         "reportUnknownParameterType": "none"
     },
     "python.analysis.typeCheckingMode": "basic",
+
+    // Configurações do Workbench
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Configurações específicas para Python
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true
+    }
 }
