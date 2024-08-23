@@ -39,5 +39,8 @@
     },
     "[django-html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "emmet.includeLanguages": {
+    "django-html": "html",
+    },
 }
