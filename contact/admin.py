@@ -7,7 +7,7 @@ from contact import models
 class ContactAdmin(admin.ModelAdmin):
 
     # Show id, first_name, last_name, phone in http://127.0.0.1:8000/admin/contact/contact/
-    list_display = ('id', 'first_name', 'last_name', 'phone',)
+    list_display = ('id', 'first_name', 'last_name', 'phone', 'show',)
 
     # Contact will ordered by "-ID" descending
     ordering = ('-id',)
@@ -20,7 +20,14 @@ class ContactAdmin(admin.ModelAdmin):
     list_max_show_all = 100
 
     # Editable contact without accessing the contact
-    list_editable = ('first_name', 'last_name', 'phone')
+    list_editable = ('first_name', 'last_name', 'phone', 'show',)
 
     # Where will the access link be located
     list_display_links = ('id',)
+
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+
+    list_display = ('name',)
+    ordering = ('-id',)

@@ -1,7 +1,9 @@
 {
     // Configurações do editor
     "editor.fontSize": 20,
-    
+    "editor.rulers": [80,],
+    "editor.defaultFormatter": "ms-python.autopep8",
+
     // Configurações do explorador
     "explorer.compactFolders": false,
 
@@ -34,5 +36,8 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8",
         "editor.formatOnSave": true
+    },
+    "[django-html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
